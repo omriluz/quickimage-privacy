@@ -20,6 +20,9 @@
   <p>This policy applies to QuickImage - WebP, PNG &amp; JPG Converter.</p>
   <h2>Data handling</h2>
   <p>QuickImage does not include analytics, advertising, accounts, or a publisher server. When the user chooses a conversion, Chrome fetches the selected image from the image's existing HTTP or HTTPS host. The bytes are decoded and re-encoded inside a temporary Chrome offscreen document, then passed to Chrome's download manager. QuickImage does not transmit the image to a separate conversion service.</p>
+  <p>The data handled for this feature includes website content (the selected image), web-resource information (the selected image URL and origin), and user activity (the local conversion count and last operation's status and timestamp). Handling this data locally is still disclosed as data use. QuickImage does not monitor unrelated pages or maintain a record of visited pages.</p>
+  <p>The image request goes to its existing host and may follow that host's redirects. That host receives the requested resource URL and ordinary network connection information. QuickImage's request omits cookies and other browser credentials. No image, URL, or conversion activity is sent to a QuickImage publisher server or a separate conversion service.</p>
+  <p>QuickImage's use of user data complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. Data is used only to provide the image-conversion feature and its local settings and status. QuickImage does not sell user data, transfer it for unrelated purposes, use it for advertising, or use it to determine creditworthiness or for lending. The publisher does not receive or read the locally processed images or local activity records.</p>
   <p>The extension stores these items locally in <code>chrome.storage.local</code>:</p>
   <ul>
     <li>The user's JPG/WebP quality setting.</li>
