@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>SlidesTimer: Floating Presentation Timer Privacy Policy</title><style>body{max-width:760px;margin:48px auto;padding:0 24px;font:17px/1.65 system-ui,sans-serif;color:#202124}h1,h2{line-height:1.25}h2{margin-top:32px}a{color:#1457b8}code{font-size:.9em}</style></head><body><main><h1>SlidesTimer: Floating Presentation Timer Privacy Policy</h1>
+<p>Effective date: 2026-09-29</p>
+<h2>Summary</h2>
+<p>SlidesTimer runs locally in Chrome. It does not collect, sell, share, or transmit personal information, browsing history, presentation content, or usage analytics. It has no developer server and makes no network requests.</p>
+<h2>Data handled</h2>
+<p>After the user clicks the toolbar icon, SlidesTimer temporarily accesses the active tab to add the timer interface. It scans rendered DOM text in memory for supported timer tags. If a tag is found, only that text node is updated in the page. Page text, URLs, titles, and timer activity are not saved or transmitted.</p>
+<p>The only persisted value is the user&#x27;s sound enabled/disabled preference in <code>chrome.storage.local</code>. Chrome stores it in the local browser profile. The extension does not use cloud sync.</p>
+<h2>Permissions</h2>
+<ul>
+<li><strong>activeTab:</strong> gives temporary access to the current tab after an explicit toolbar click.</li>
+<li><strong>scripting:</strong> injects the packaged timer engine and interface into that tab.</li>
+<li><strong>storage:</strong> stores the sound preference.</li>
+</ul>
+<p>SlidesTimer requests no persistent site access and no Google account access.</p>
+<h2>Audio</h2>
+<p>If the user enables sound, SlidesTimer uses the browser&#x27;s Web Audio API to synthesize a short local chime. No audio is recorded or uploaded.</p>
+<h2>Retention and deletion</h2>
+<p>Timer state and inspected tag text remain only in the current tab&#x27;s memory and disappear when the page is closed or navigates to another origin. To delete the sound preference, remove the extension or clear its extension storage.</p>
+<h2>Children and sensitive data</h2>
+<p>SlidesTimer does not knowingly collect any data, including data from children. Users should avoid placing unsupported timer tags in editable fields; the extension deliberately excludes inputs, textareas, and contenteditable regions from tag enhancement.</p>
+<p>These publication fields must be completed before Chrome Web Store submission.</p>
+<h2>Local and functional data use</h2>
+<p>SlidesTimer handles temporary page DOM used for the timer overlay and a local sound preference. Local-only processing is still disclosed as data handling. Existing site and service privacy terms apply to the functional requests or user-directed transfers described above.</p>
+<h2>Limited Use</h2>
+<p>Use of user data complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. Data is used only to provide the extension&#x27;s disclosed single purpose and its associated local controls and status. The publisher does not sell user data, use or transfer it for unrelated purposes or advertising, or use it to determine creditworthiness or for lending. External recipients, when any, are limited to the functional, user-directed workflows described in this policy. The publisher does not operate a service that receives these extension records.</p>
+<h2>Contact</h2>
+<p>Support and privacy email: omriluz1994@gmail.com</p>
+<p>Hosted privacy policy: https://omriluz.github.io/quickimage-privacy/09-slidestimer-presentation-timer/</p>
+<p>Last updated: 2026-10-02</p>
+</main></body></html>

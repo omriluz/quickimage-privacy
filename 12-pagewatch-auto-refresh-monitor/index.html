@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>PageWatch: Auto Refresh Monitor Privacy Policy</title><style>body{max-width:760px;margin:48px auto;padding:0 24px;font:17px/1.65 system-ui,sans-serif;color:#202124}h1,h2{line-height:1.25}h2{margin-top:32px}a{color:#1457b8}code{font-size:.9em}</style></head><body><main><h1>PageWatch: Auto Refresh Monitor Privacy Policy</h1>
+<h2>Data behavior</h2>
+<p>PageWatch processes the visible text of a tab only after the user explicitly starts monitoring that tab. Matching happens locally in Chrome. Page text, patterns, URLs, monitor state, and notification state are not sent to the developer or any third party.</p>
+<p>The extension has no analytics, telemetry, advertising, account system, remote API, or payment integration.</p>
+<h2>Local storage</h2>
+<p>PageWatch stores a random browser-session identifier and recent result state in <code>chrome.storage.session</code>. The identifier is generated locally and is used only to prevent persisted tab IDs from being reused after a full browser restart. When the session identifier is absent, persisted monitors are discarded.</p>
+<p>Stopping a monitor removes its active local record and alarm. A stop-on-match result may remain in session storage until the browser session ends, the tab closes, the tab crosses to another origin, or the user starts or stops that tab&#x27;s monitor again.</p>
+<h2>Permissions</h2>
+<ul>
+<li><code>activeTab</code> provides temporary access after the user opens PageWatch on the selected tab.</li>
+<li><code>alarms</code> schedules later reload cycles.</li>
+<li><code>notifications</code> displays a local match-state change alert.</li>
+<li><code>scripting</code> reads visible page text after a monitored reload completes.</li>
+<li><code>storage</code> holds local monitor and session state.</li>
+<li><code>tabs</code> identifies, reloads, observes, and cleans up the selected tab.</li>
+</ul>
+<p>PageWatch requests no host permissions. It does not inspect unrelated tabs, run automatically on visited sites, bypass site controls, submit forms, or click page elements.</p>
+<h2>Retention and deletion</h2>
+<p>Users can remove active monitor state by selecting <strong>Stop monitoring</strong>, closing the monitored tab, navigating it to another origin, disabling the extension, or uninstalling it. Uninstalling removes extension-managed Chrome storage under Chrome&#x27;s normal extension data lifecycle.</p>
+<p>This file describes version 1.0.0 source behavior. The hosted privacy policy must match the reviewed release package.</p>
+<h2>Local and functional data use</h2>
+<p>PageWatch handles monitored page text, pattern, origin/URL and local monitor/check/alert state. Local-only processing is still disclosed as data handling. Existing site and service privacy terms apply to the functional requests or user-directed transfers described above.</p>
+<h2>Limited Use</h2>
+<p>Use of user data complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. Data is used only to provide the extension&#x27;s disclosed single purpose and its associated local controls and status. The publisher does not sell user data, use or transfer it for unrelated purposes or advertising, or use it to determine creditworthiness or for lending. External recipients, when any, are limited to the functional, user-directed workflows described in this policy. The publisher does not operate a service that receives these extension records.</p>
+<h2>Contact</h2>
+<p>Support and privacy email: omriluz1994@gmail.com</p>
+<p>Hosted privacy policy: https://omriluz.github.io/quickimage-privacy/12-pagewatch-auto-refresh-monitor/</p>
+<p>Last updated: 2026-10-02</p>
+</main></body></html>

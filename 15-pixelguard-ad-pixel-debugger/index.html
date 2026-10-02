@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>PixelGuard — Ad Pixel Debugger Privacy Policy</title><style>body{max-width:760px;margin:48px auto;padding:0 24px;font:17px/1.65 system-ui,sans-serif;color:#202124}h1,h2{line-height:1.25}h2{margin-top:32px}a{color:#1457b8}code{font-size:.9em}</style></head><body><main><h1>PixelGuard — Ad Pixel Debugger Privacy Policy</h1>
+<p>Last updated: September 29, 2026</p>
+<p>PixelGuard runs locally in Chrome. It does not operate a developer server, analytics service, account system or advertising tracker.</p>
+<h2>Data handled</h2>
+<p>Only after the user selects <strong>Start capture</strong>, PixelGuard observes supported ad/conversion pixel requests initiated by that authorized site in that tab. It derives a provider, event name, pixel/conversion ID, event or transaction ID, conversion label, HTTP method, provider endpoint path, and a small allowlist of commerce parameters such as value, currency, content ID, order quantity and order ID.</p>
+<p>PixelGuard does not request or read cookies. It does not request request headers or response headers, so it does not collect cookie or authorization header values. It does not retain full request URLs, page URLs, full raw bodies, email/phone matching fields or arbitrary parameters. Retained field values are length-limited.</p>
+<h2>Storage and retention</h2>
+<p>Sanitized records are stored in <code>chrome.storage.session</code> for the current browser session. Capture is isolated by tab and site origin, with a maximum of 60 records per tab and at most 10 restored capture sessions. Same-origin navigation clears records. Cross-origin navigation, tab closure, permission revocation, <strong>Clear</strong>, or <strong>Stop capture</strong> removes applicable data. Closing the browser clears Chrome session storage.</p>
+<p>Data is not sold, shared with the publisher or sent to a PixelGuard-controlled server. The ad pixel requests themselves are initiated by the tested website and directed to the named advertising providers; PixelGuard observes them locally and does not add or resend them.</p>
+<h2>Permissions</h2>
+<ul>
+<li><code>activeTab</code>: identify the tab where the user opened PixelGuard.</li>
+<li><code>webRequest</code>: observe supported provider requests without blocking or modifying them.</li>
+<li><code>storage</code>: keep bounded session records across service-worker suspension.</li>
+<li>Optional HTTP/HTTPS host access: requested on <strong>Start capture</strong> for the current site hostname and scheme plus supported provider endpoint origins. Chrome host permissions cover all ports on a hostname; PixelGuard separately gates capture to the exact authorized page origin, including its port. It is not granted at installation.</li>
+</ul>
+<p>Removing site access in Chrome stops affected capture. <strong>Stop capture</strong> releases permissions that are not needed by another active tab session.</p>
+<h2>Limits</h2>
+<p>An observed request is not evidence of server receipt, acceptance, deduplication or conversion attribution. PixelGuard does not inspect provider accounts or server-side Conversion API traffic.</p>
+<h2>Local and functional data use</h2>
+<p>PixelGuard handles bounded provider/event/transaction identifiers, commerce values and request/session metadata; custom fields may contain personal information despite redaction. Local-only processing is still disclosed as data handling. Existing site and service privacy terms apply to the functional requests or user-directed transfers described above.</p>
+<h2>Limited Use</h2>
+<p>Use of user data complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. Data is used only to provide the extension&#x27;s disclosed single purpose and its associated local controls and status. The publisher does not sell user data, use or transfer it for unrelated purposes or advertising, or use it to determine creditworthiness or for lending. External recipients, when any, are limited to the functional, user-directed workflows described in this policy. The publisher does not operate a service that receives these extension records.</p>
+<h2>Contact</h2>
+<p>Support and privacy email: omriluz1994@gmail.com</p>
+<p>Hosted privacy policy: https://omriluz.github.io/quickimage-privacy/15-pixelguard-ad-pixel-debugger/</p>
+<p>Last updated: 2026-10-02</p>
+</main></body></html>

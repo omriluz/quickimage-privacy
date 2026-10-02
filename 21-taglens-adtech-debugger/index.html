@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>TagLens — Analytics QA Debugger Privacy Policy</title><style>body{max-width:760px;margin:48px auto;padding:0 24px;font:17px/1.65 system-ui,sans-serif;color:#202124}h1,h2{line-height:1.25}h2{margin-top:32px}a{color:#1457b8}code{font-size:.9em}</style></head><body><main><h1>TagLens — Analytics QA Debugger Privacy Policy</h1>
+<p>Last updated: September 29, 2026</p>
+<p>TagLens runs locally in Chrome. It has no developer-operated server, telemetry, account system, or advertising tracker.</p>
+<h2>Data handled</h2>
+<p>Only after the user selects <strong>Start capture</strong>, TagLens observes supported GA4, Adobe Analytics, and GTM browser requests initiated by the authorized site in that tab. It derives a provider, event/request label, measurement/container/report-suite ID, method, endpoint path, diagnostics, and bounded decoded parameters.</p>
+<p>TagLens does not request or read cookies. It does not request request headers or response headers, so it does not collect cookie or authorization header values. It does not retain full request URLs or raw request bodies. Before retention, likely identity/contact keys and email/phone-shaped values are replaced with <code>[redacted]</code>, query strings are removed from URL-shaped values, known secret/header fields are omitted, and keys/values/counts are length-limited. Because custom analytics fields can contain arbitrary business data, heuristic redaction cannot identify every sensitive value; users should capture only authorized test sites and review exports before sharing.</p>
+<h2>Storage and retention</h2>
+<p>Sanitized records are stored in <code>chrome.storage.session</code> for the current browser session. Capture is isolated by tab and site origin, with at most 80 records per tab and 10 simultaneous sessions. Same-origin loading and <strong>Clear</strong> erase the feed and rotate its generation. Cross-origin navigation, unavailable tab URL access, tab closure, permission revocation, or <strong>Stop capture</strong> removes the applicable session. Closing Chrome clears session storage.</p>
+<p>Data is not sold, shared with the publisher, or sent to a TagLens-controlled service. The analytics requests are initiated by the tested website and directed to the named providers; TagLens observes them locally and does not add or resend them.</p>
+<h2>Permissions</h2>
+<ul>
+<li><code>activeTab</code>: identify the tab where the user opened TagLens.</li>
+<li><code>webRequest</code>: observe supported provider requests without blocking or modifying them.</li>
+<li><code>storage</code>: preserve bounded session records across service-worker suspension.</li>
+<li>Optional HTTP/HTTPS host access: requested on <strong>Start capture</strong> for the exact current site and supported provider endpoint patterns. It is not granted at installation.</li>
+</ul>
+<h2>Limits</h2>
+<p>An observed request is not evidence of server receipt, acceptance, processing, reporting, attribution, GTM execution, or server-side tagging. TagLens does not inspect provider accounts.</p>
+<h2>Local and functional data use</h2>
+<p>TagLens handles bounded provider/event identifiers, request paths, parameters and session metadata; custom analytics fields may contain personal information despite heuristic redaction. Local-only processing is still disclosed as data handling. Existing site and service privacy terms apply to the functional requests or user-directed transfers described above.</p>
+<h2>Limited Use</h2>
+<p>Use of user data complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. Data is used only to provide the extension&#x27;s disclosed single purpose and its associated local controls and status. The publisher does not sell user data, use or transfer it for unrelated purposes or advertising, or use it to determine creditworthiness or for lending. External recipients, when any, are limited to the functional, user-directed workflows described in this policy. The publisher does not operate a service that receives these extension records.</p>
+<h2>Contact</h2>
+<p>Support and privacy email: omriluz1994@gmail.com</p>
+<p>Hosted privacy policy: https://omriluz.github.io/quickimage-privacy/21-taglens-adtech-debugger/</p>
+<p>Last updated: 2026-10-02</p>
+</main></body></html>

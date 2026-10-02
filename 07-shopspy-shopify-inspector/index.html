@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ShopSpy - Shopify Store Inspector Privacy Policy</title><style>body{max-width:760px;margin:48px auto;padding:0 24px;font:17px/1.65 system-ui,sans-serif;color:#202124}h1,h2{line-height:1.25}h2{margin-top:32px}a{color:#1457b8}code{font-size:.9em}</style></head><body><main><h1>ShopSpy - Shopify Store Inspector Privacy Policy</h1>
+<h2>What ShopSpy processes</h2>
+<p>ShopSpy runs only after the user clicks its toolbar action. On the active HTTP(S) page it reads:</p>
+<ul>
+<li>the current origin and hostname;</li>
+<li>public script, stylesheet, and iframe URLs;</li>
+<li>a small set of public DOM markers;</li>
+<li>public generator and currency meta tags;</li>
+<li>readable inline <code>Shopify.theme</code> metadata;</li>
+<li>public product fields returned by the active origin&#x27;s <code>/products.json</code> endpoint, up to 250 products per popup session.</li>
+</ul>
+<p>The catalog request is sent directly from the storefront page to the same storefront origin with credentials omitted. It does not include the user&#x27;s storefront cookies through the extension request code.</p>
+<h2>Storage and transfer</h2>
+<p>Inspection results stay in the popup&#x27;s memory and disappear when the popup closes. ShopSpy does not use Chrome storage, a remote server, analytics, advertising, telemetry, or account login. CSV files are created locally from the currently loaded store&#x27;s products and downloaded only when the user clicks export.</p>
+<p>ShopSpy does not request or read Shopify Admin, merchant account, customer, order, payment, private app, or private analytics data. It does not sell or share inspection data.</p>
+<p>The inspected storefront still receives the public catalog requests, as it would receive other page requests. Chrome and the user&#x27;s network environment may apply their own logging or privacy behavior.</p>
+<h2>Permissions</h2>
+<ul>
+<li><code>activeTab</code>: temporary access to the tab the user explicitly invokes ShopSpy on.</li>
+<li><code>scripting</code>: injects the bundled local inspection code into that active tab.</li>
+</ul>
+<p>No persistent host permission is requested.</p>
+<p>These operational fields must be completed before publication. Catalog requests omit cookies and referrers, refuse redirects, time out after 10 seconds including response reading, and reject responses larger than 2 MB or more than 50 products per page. An inspection holds at most 250 products. Missing or malformed prices remain unknown.</p>
+<h2>Local and functional data use</h2>
+<p>ShopSpy handles storefront page/catalog content and current origin/resource URLs; popup results in memory. Local-only processing is still disclosed as data handling. Existing site and service privacy terms apply to the functional requests or user-directed transfers described above.</p>
+<h2>Limited Use</h2>
+<p>Use of user data complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. Data is used only to provide the extension&#x27;s disclosed single purpose and its associated local controls and status. The publisher does not sell user data, use or transfer it for unrelated purposes or advertising, or use it to determine creditworthiness or for lending. External recipients, when any, are limited to the functional, user-directed workflows described in this policy. The publisher does not operate a service that receives these extension records.</p>
+<h2>Contact</h2>
+<p>Support and privacy email: omriluz1994@gmail.com</p>
+<p>Hosted privacy policy: https://omriluz.github.io/quickimage-privacy/07-shopspy-shopify-inspector/</p>
+<p>Last updated: 2026-10-02</p>
+</main></body></html>

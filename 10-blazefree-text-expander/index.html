@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>BlazeFree Local Text Expander Privacy Policy</title><style>body{max-width:760px;margin:48px auto;padding:0 24px;font:17px/1.65 system-ui,sans-serif;color:#202124}h1,h2{line-height:1.25}h2{margin-top:32px}a{color:#1457b8}code{font-size:.9em}</style></head><body><main><h1>BlazeFree Local Text Expander Privacy Policy</h1>
+<p>Last updated: 2026-09-29</p>
+<p>BlazeFree stores snippet shortcuts and content, enabled-site records, and the latest pre-import backup in <code>chrome.storage.local</code> in the user&#x27;s Chrome profile. It does not include telemetry, advertising, accounts, billing, or developer-operated network processing.</p>
+<p>BlazeFree does not store general text typed into web pages. On a website the user has explicitly enabled, its local content script receives browser input events and inspects only enough text immediately before the active caret to find a saved shortcut. It does not use a page-wide keydown logger. It does not expand in password inputs, recognized card/payment fields, or elements marked by the page as sensitive/private. It does not submit forms.</p>
+<p>Site access is optional. The extension requests access to the current HTTP(S) site only after the user presses <strong>Enable</strong>. Enabled sites are shown in the popup, persisted locally, and removed from Chrome permissions when disabled. Chrome host-permission patterns cover all ports on that scheme and hostname. BlazeFree separately gates expansion to the exact enabled origin, including its port. The extension does not inject into cross-origin frames in v1.</p>
+<p>Export happens only when the user requests a JSON download. Import reads the file the user selects locally, validates it, and makes no change until the user chooses merge or replace. An import backup remains in local extension storage until used or superseded.</p>
+<p>Chrome may include local extension data in browser/profile backup mechanisms controlled by Chrome or the operating system. BlazeFree does not claim that local storage is encrypted or synchronized.</p>
+<h2>Local and functional data use</h2>
+<p>BlazeFree handles user-authored snippet text, saved site origins and transient caret-adjacent text/input events; snippets may contain sensitive user-authored content. Local-only processing is still disclosed as data handling. Existing site and service privacy terms apply to the functional requests or user-directed transfers described above.</p>
+<h2>Limited Use</h2>
+<p>Use of user data complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. Data is used only to provide the extension&#x27;s disclosed single purpose and its associated local controls and status. The publisher does not sell user data, use or transfer it for unrelated purposes or advertising, or use it to determine creditworthiness or for lending. External recipients, when any, are limited to the functional, user-directed workflows described in this policy. The publisher does not operate a service that receives these extension records.</p>
+<h2>Contact</h2>
+<p>Support and privacy email: omriluz1994@gmail.com</p>
+<p>Hosted privacy policy: https://omriluz.github.io/quickimage-privacy/10-blazefree-text-expander/</p>
+<p>Last updated: 2026-10-02</p>
+</main></body></html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>MockFlow: Local API Response Mocker Privacy Policy</title><style>body{max-width:760px;margin:48px auto;padding:0 24px;font:17px/1.65 system-ui,sans-serif;color:#202124}h1,h2{line-height:1.25}h2{margin-top:32px}a{color:#1457b8}code{font-size:.9em}</style></head><body><main><h1>MockFlow: Local API Response Mocker Privacy Policy</h1>
+<p>MockFlow does not include analytics, advertising, telemetry, accounts, payments, or remote application services.</p>
+<h2>Data handled</h2>
+<p>The extension stores rule names, exact page origins, request URLs, redirect destinations, header changes, enabled state, and user-authored JSON response bodies in Chrome local extension storage. Stored rules remain on the device unless the user explicitly exports a rules file. Enabled redirects and header changes alter the page’s actual network requests: destinations receive those requests and configured headers. Avoid putting secrets in shared rule exports. Mock response content is provided to the opted-in webpage’s own JavaScript. Import reads only the file the user selects.</p>
+<p>The page-world shim compares page <code>fetch()</code> and asynchronous XHR URLs with enabled rules. Matching calls receive the locally stored response. Unmatched calls continue through the browser normally. MockFlow does not log request bodies, response bodies, browsing history, or credentials.</p>
+<h2>Permissions</h2>
+<ul>
+<li><code>activeTab</code>: lets the user activate response mocking on the page where they opened MockFlow.</li>
+<li><code>scripting</code>: installs the local fetch/XHR shim in that page&#x27;s main JavaScript world.</li>
+<li><code>declarativeNetRequest</code>: applies the user&#x27;s enabled redirect and header rules.</li>
+<li><code>storage</code>: saves rules locally.</li>
+<li>Optional <code>http://*/*</code> and <code>https://*/*</code> host access: the manifest declares the categories Chrome requires. At save or enable time, MockFlow requests each needed scheme and hostname; Chrome&#x27;s permission covers that host on all ports. MockFlow&#x27;s own page-origin comparison remains exact, including the port, and DNR rules are limited to matching tab IDs. Denial leaves the previous rules active.</li>
+</ul>
+<p>No data is sold, shared, or transmitted by the extension developer.</p>
+<h2>Local and functional data use</h2>
+<p>MockFlow handles rule names, origins, request/destination URLs, headers and user-authored mock bodies; these may contain authentication values or personal information entered by the user. Local-only processing is still disclosed as data handling. Existing site and service privacy terms apply to the functional requests or user-directed transfers described above.</p>
+<h2>Limited Use</h2>
+<p>Use of user data complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. Data is used only to provide the extension&#x27;s disclosed single purpose and its associated local controls and status. The publisher does not sell user data, use or transfer it for unrelated purposes or advertising, or use it to determine creditworthiness or for lending. External recipients, when any, are limited to the functional, user-directed workflows described in this policy. The publisher does not operate a service that receives these extension records.</p>
+<h2>Contact</h2>
+<p>Support and privacy email: omriluz1994@gmail.com</p>
+<p>Hosted privacy policy: https://omriluz.github.io/quickimage-privacy/18-mockflow-api-interceptor/</p>
+<p>Last updated: 2026-10-02</p>
+</main></body></html>

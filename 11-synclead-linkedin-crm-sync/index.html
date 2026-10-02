@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>SyncLead: LinkedIn Profile Capture Privacy Policy</title><style>body{max-width:760px;margin:48px auto;padding:0 24px;font:17px/1.65 system-ui,sans-serif;color:#202124}h1,h2{line-height:1.25}h2{margin-top:32px}a{color:#1457b8}code{font-size:.9em}</style></head><body><main><h1>SyncLead: LinkedIn Profile Capture Privacy Policy</h1>
+<p>Last updated: September 29, 2026</p>
+<h2>What SyncLead handles</h2>
+<p>SyncLead handles only data needed for its user-requested workflow:</p>
+<ul>
+<li>visible name, headline, current company, location, about text, and profile URL from the individual LinkedIn profile open when the user presses <strong>Capture visible profile</strong>;</li>
+<li>a local list containing those captured fields and local created/updated timestamps;</li>
+<li>an optional HTTPS webhook URL;</li>
+<li>an optional Notion integration token, data source ID, and title property name.</li>
+</ul>
+<p>SyncLead does not enrich profiles, discover emails or phone numbers, read messages, crawl profile lists, collect browsing history, use analytics, display advertising, or operate a publisher-owned server.</p>
+<h2>When data leaves the browser</h2>
+<p>Profile data leaves the browser only when the user presses <strong>Send to webhook</strong> or <strong>Send to Notion</strong> and grants Chrome access to the displayed destination host.</p>
+<ul>
+<li>A webhook send goes directly from Chrome to the HTTPS URL configured by the user.</li>
+<li>A Notion send goes directly from Chrome to <code>https://api.notion.com/v1/pages</code> with the locally stored integration token.</li>
+</ul>
+<p>The selected destination&#x27;s own privacy terms and retention practices apply after it receives the data. SyncLead refuses HTTP destinations and redirects, limits request duration to 12 seconds, and reads at most 64 KB of a destination response.</p>
+<h2>Local storage and retention</h2>
+<p>SyncLead stores up to 500 deduplicated leads and optional destination settings in <code>chrome.storage.local</code>. This storage is local to the Chrome profile and is removed when the extension is uninstalled. Users can delete all leads and destination settings separately from the extension.</p>
+<p>Chrome extension storage is not encrypted. The extension sets storage access to <code>TRUSTED_CONTEXTS</code>, preventing injected page code from reading it through a content-script context. Device and browser-profile access remain security boundaries that users must protect.</p>
+<h2>Permissions</h2>
+<ul>
+<li><code>activeTab</code>: temporary access to the active page after the user opens the extension, used for one requested capture.</li>
+<li><code>scripting</code>: injects the one-shot visible-profile extractor into that active tab.</li>
+<li><code>storage</code>: saves the lead list and optional destination settings locally.</li>
+<li>optional <code>https://*/*</code> host access: requested for the exact configured webhook host or Notion host only when the user presses send. It is not granted at installation.</li>
+</ul>
+<h2>Sharing and sale</h2>
+<p>The extension publisher does not receive, sell, or use the handled data for advertising, credit decisions, or unrelated purposes. User-directed transfers to the user&#x27;s configured webhook or Notion workspace are the only external disclosures performed by the extension.</p>
+<h2>Local and functional data use</h2>
+<p>SyncLead handles profile name, headline, company, location, about text and URL; local lead records, webhook settings and optional Notion integration token. Local-only processing is still disclosed as data handling. Existing site and service privacy terms apply to the functional requests or user-directed transfers described above.</p>
+<h2>Limited Use</h2>
+<p>Use of user data complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. Data is used only to provide the extension&#x27;s disclosed single purpose and its associated local controls and status. The publisher does not sell user data, use or transfer it for unrelated purposes or advertising, or use it to determine creditworthiness or for lending. External recipients, when any, are limited to the functional, user-directed workflows described in this policy. The publisher does not operate a service that receives these extension records.</p>
+<h2>Contact</h2>
+<p>Support and privacy email: omriluz1994@gmail.com</p>
+<p>Hosted privacy policy: https://omriluz.github.io/quickimage-privacy/11-synclead-linkedin-crm-sync/</p>
+<p>Last updated: 2026-10-02</p>
+</main></body></html>

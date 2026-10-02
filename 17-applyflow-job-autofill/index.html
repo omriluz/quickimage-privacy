@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ApplyFlow: Job Application Autofill &amp; Tracker Privacy Policy</title><style>body{max-width:760px;margin:48px auto;padding:0 24px;font:17px/1.65 system-ui,sans-serif;color:#202124}h1,h2{line-height:1.25}h2{margin-top:32px}a{color:#1457b8}code{font-size:.9em}</style></head><body><main><h1>ApplyFlow: Job Application Autofill &amp; Tracker Privacy Policy</h1>
+<p>Last updated: 2026-09-29</p>
+<p>ApplyFlow stores the applicant profile and tracked job records the user chooses to save in <code>chrome.storage.local</code> inside the current Chrome profile. Profile fields can include name, email, phone, city, country, and profile/portfolio links. Tracker records can include job title, company, page URL, status, and local timestamps, capped at 500 records. Stored URLs omit credentials, fragments and query parameters other than explicit job identifiers (<code>gh_jid</code>, <code>jobId</code>, <code>jid</code>). Content scripts cannot directly read profile/tracker storage; the chosen profile is sent to the page tool only when you invoke review.</p>
+<p>When the user selects <strong>Review current page</strong>, Chrome&#x27;s <code>activeTab</code> permission gives ApplyFlow temporary access to that page. The extension reads visible form labels and current values to prepare a local preview, and reads a likely job title/company to prefill the optional tracker fields. It changes only selected, empty standard controls after the user confirms in the page panel. It does not submit forms, attach files, read a resume, or fill sensitive demographic, legal, eligibility, sponsorship, criminal-history, birth/age, or compensation answers.</p>
+<p>ApplyFlow makes no network requests and contains no analytics, advertising, remote code, account system, or cloud database. It does not sell user data or transmit it to the extension developer. Values you choose to fill become available to the destination webpage; that site may process or transmit them before you submit. Data remains in extension-local browser storage until the user edits/removes records or uninstalls the extension. Chrome extension storage is local persistence, not encrypted vault storage; anyone with access to the Chrome profile may be able to access it.</p>
+<p>Permissions:</p>
+<ul>
+<li><code>storage</code>: save the applicant profile and application tracker locally.</li>
+<li><code>activeTab</code>: temporarily inspect and update the page only after the user invokes ApplyFlow.</li>
+<li><code>scripting</code>: load the review/fill code into that user-invoked page.</li>
+</ul>
+<h2>Local and functional data use</h2>
+<p>ApplyFlow handles name, email, phone, location, profile links and local job/application URLs and statuses. Local-only processing is still disclosed as data handling. Existing site and service privacy terms apply to the functional requests or user-directed transfers described above.</p>
+<h2>Limited Use</h2>
+<p>Use of user data complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. Data is used only to provide the extension&#x27;s disclosed single purpose and its associated local controls and status. The publisher does not sell user data, use or transfer it for unrelated purposes or advertising, or use it to determine creditworthiness or for lending. External recipients, when any, are limited to the functional, user-directed workflows described in this policy. The publisher does not operate a service that receives these extension records.</p>
+<h2>Contact</h2>
+<p>Support and privacy email: omriluz1994@gmail.com</p>
+<p>Hosted privacy policy: https://omriluz.github.io/quickimage-privacy/17-applyflow-job-autofill/</p>
+<p>Last updated: 2026-10-02</p>
+</main></body></html>

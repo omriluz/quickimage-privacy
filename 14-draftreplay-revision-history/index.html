@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>DraftReplay: Writing Session Recorder Privacy Policy</title><style>body{max-width:760px;margin:48px auto;padding:0 24px;font:17px/1.65 system-ui,sans-serif;color:#202124}h1,h2{line-height:1.25}h2{margin-top:32px}a{color:#1457b8}code{font-size:.9em}</style></head><body><main><h1>DraftReplay: Writing Session Recorder Privacy Policy</h1>
+<p>Last updated: 2026-09-29</p>
+<p>DraftReplay is local-first. It has no account, analytics, telemetry, advertising, remote API, or developer-operated server. It does not sell or transmit session data.</p>
+<h2>Data handled</h2>
+<p>After the user selects <strong>Start recording</strong>, DraftReplay saves the current text in the focused supported editor as a baseline, followed by text-change patches, relative timing, selection ranges, page title, a field label when available, and a document key made from the page origin and path. Query strings and fragments are excluded. This data can contain whatever the user writes in the selected editor.</p>
+<p>Data is stored in Chrome&#x27;s local extension storage on the current browser profile. Up to 12 sessions are retained for 30 days. Users can discard an active session, delete one saved session, clear all sessions, or uninstall the extension. JSON and text exports are created only when the user requests them and then become files controlled by the user.</p>
+<h2>Recording safeguards</h2>
+<p>DraftReplay does not run a recorder automatically and does not register page-wide keyboard listeners. It listens only to the selected standard editor while a visible recording indicator is present. It refuses password fields and conservatively identified payment, one-time-code, bank, Social Security, passcode, and similar credential fields. Before each captured edit or composition, it rechecks the field classification, editor connection, and full page URL held only in that page&#x27;s memory; it stops before reading a newly sensitive, disconnected, or cross-document editor. Query strings and fragments are not added to saved session data. It does not support Google Docs or attempt to read Google Docs revision history.</p>
+<p>Each active session is internally bound to the originating Chrome tab, frame, and document ID so another injected page cannot update it. These runtime ownership fields are kept only in local extension storage and are omitted from exports and displayed session data. Deleting or clearing an active session stops its page recorder and records a bounded local deletion marker to reject any save that was already in transit. If local storage rejects a save, DraftReplay keeps the session in page memory and displays retry/discard controls rather than reporting a successful save.</p>
+<h2>Permissions</h2>
+<ul>
+<li><code>activeTab</code>: gives temporary page access after the user invokes the extension.</li>
+<li><code>scripting</code>: injects the recorder after the user chooses to start.</li>
+<li><code>storage</code>: keeps bounded session records locally for replay and export.</li>
+</ul>
+<p>DraftReplay declares no persistent website access.</p>
+<p>Retention cleanup runs when Chrome starts, the extension updates, a session is saved, or the library/viewer is opened. Expired data is removed at the next cleanup; uninstalling removes extension storage.</p>
+<h2>Local and functional data use</h2>
+<p>DraftReplay handles user-authored writing, edit timing and selection ranges, title/field labels and origin/path; writing may include personal communications and personal information. Local-only processing is still disclosed as data handling. Existing site and service privacy terms apply to the functional requests or user-directed transfers described above.</p>
+<h2>Limited Use</h2>
+<p>Use of user data complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. Data is used only to provide the extension&#x27;s disclosed single purpose and its associated local controls and status. The publisher does not sell user data, use or transfer it for unrelated purposes or advertising, or use it to determine creditworthiness or for lending. External recipients, when any, are limited to the functional, user-directed workflows described in this policy. The publisher does not operate a service that receives these extension records.</p>
+<h2>Contact</h2>
+<p>Support and privacy email: omriluz1994@gmail.com</p>
+<p>Hosted privacy policy: https://omriluz.github.io/quickimage-privacy/14-draftreplay-revision-history/</p>
+<p>Last updated: 2026-10-02</p>
+</main></body></html>

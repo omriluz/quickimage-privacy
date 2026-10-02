@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>PureBoost: Tab Volume Booster Privacy Policy</title><style>body{max-width:760px;margin:48px auto;padding:0 24px;font:17px/1.65 system-ui,sans-serif;color:#202124}h1,h2{line-height:1.25}h2{margin-top:32px}a{color:#1457b8}code{font-size:.9em}</style></head><body><main><h1>PureBoost: Tab Volume Booster Privacy Policy</h1>
+<p>Last updated: September 29, 2026</p>
+<p>PureBoost processes audio from the browser tab that the user explicitly selects. Processing happens locally in Chrome memory through the Web Audio API so the adjusted audio can play through the current default output device.</p>
+<h2>Data handled</h2>
+<ul>
+<li><strong>Selected-tab audio:</strong> captured transiently in memory while boosting is active. PureBoost does not record, save, upload, transmit, sell, or share it.</li>
+<li><strong>Per-tab preferences:</strong> volume percentage and bass-boost state are stored in <code>chrome.storage.session</code>, keyed by Chrome&#x27;s numeric tab identifier. They are removed when that tab closes or Chrome exits.</li>
+<li><strong>Runtime status:</strong> active/error state is stored temporarily in <code>chrome.storage.session</code> so the popup reports confirmed capture state. It is not sent anywhere.</li>
+<li><strong>Current tab URL:</strong> the popup reads the selected tab URL only to reject browser-internal or unsupported pages. The URL is not stored or transmitted.</li>
+</ul>
+<p>PureBoost has no analytics, advertising, account system, remote service, or network request in its runtime code.</p>
+<h2>Permissions</h2>
+<ul>
+<li><code>activeTab</code>: temporarily reads the selected tab URL after toolbar activation to identify supported pages; no page content is read.</li>
+<li><code>tabCapture</code>: obtains audio from the tab chosen through the toolbar action.</li>
+<li><code>offscreen</code>: hosts the local Web Audio graph after the popup closes.</li>
+<li><code>storage</code>: stores the per-tab controls and temporary capture status described above.</li>
+</ul>
+<p>PureBoost requests no host permissions and does not read page content.</p>
+<h2>Retention and deletion</h2>
+<p>Audio exists only in the live media pipeline and is released when boosting stops, the stream ends, or the tab closes. Per-tab preferences are removed when the tab closes or Chrome exits. Removing the extension deletes its Chrome-managed local and session storage.</p>
+<p>This repository document is release copy; it is not yet a hosted privacy policy.</p>
+<h2>Local and functional data use</h2>
+<p>PureBoost handles selected-tab audio and transient current-tab URL; local volume/bass preferences and session state. Local-only processing is still disclosed as data handling. Existing site and service privacy terms apply to the functional requests or user-directed transfers described above.</p>
+<h2>Limited Use</h2>
+<p>Use of user data complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. Data is used only to provide the extension&#x27;s disclosed single purpose and its associated local controls and status. The publisher does not sell user data, use or transfer it for unrelated purposes or advertising, or use it to determine creditworthiness or for lending. External recipients, when any, are limited to the functional, user-directed workflows described in this policy. The publisher does not operate a service that receives these extension records.</p>
+<h2>Contact</h2>
+<p>Support and privacy email: omriluz1994@gmail.com</p>
+<p>Hosted privacy policy: https://omriluz.github.io/quickimage-privacy/02-pureboost-volume-booster/</p>
+<p>Last updated: 2026-10-02</p>
+</main></body></html>

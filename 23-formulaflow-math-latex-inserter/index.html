@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>FormulaFlow: Offline LaTeX Equations Privacy Policy</title><style>body{max-width:760px;margin:48px auto;padding:0 24px;font:17px/1.65 system-ui,sans-serif;color:#202124}h1,h2{line-height:1.25}h2{margin-top:32px}a{color:#1457b8}code{font-size:.9em}</style></head><body><main><h1>FormulaFlow: Offline LaTeX Equations Privacy Policy</h1>
+<p>Last updated: September 29, 2026</p>
+<p>FormulaFlow processes LaTeX equations locally inside the extension. It does not transmit equations, history, clipboard contents, usage events, or identifiers to the publisher or to a third party. It contains no analytics, advertising, telemetry, account system, remote fonts, or external rendering API.</p>
+<h2>Data stored on the device</h2>
+<p>After a successful copy or download, FormulaFlow saves the equation&#x27;s LaTeX source, a random local item ID, and a creation timestamp in <code>chrome.storage.local</code>. It keeps up to 25 recent equations. Users can delete individual entries from the popup. Chrome controls the underlying extension storage and its removal when the extension is uninstalled.</p>
+<h2>Clipboard and downloads</h2>
+<p>When the user clicks Copy LaTeX, FormulaFlow writes the current equation source to the clipboard. When the user clicks Copy PNG, it renders the current equation into a local canvas and asks Chrome to write an <code>image/png</code> item. The extension does not read existing clipboard contents.</p>
+<p>When the user clicks Download SVG or Download PNG, FormulaFlow creates the file locally in the popup and starts a normal browser download. No equation data is uploaded.</p>
+<h2>Permissions</h2>
+<ul>
+<li><code>storage</code> stores recent equations locally.</li>
+<li><code>clipboardWrite</code> performs the user-requested copy action.</li>
+</ul>
+<p>FormulaFlow requests no website access or host permissions.</p>
+<h2>Local and functional data use</h2>
+<p>FormulaFlow handles user-entered equation text and up to 25 local recent equations with identifiers and timestamps. Local-only processing is still disclosed as data handling. Existing site and service privacy terms apply to the functional requests or user-directed transfers described above.</p>
+<h2>Limited Use</h2>
+<p>Use of user data complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. Data is used only to provide the extension&#x27;s disclosed single purpose and its associated local controls and status. The publisher does not sell user data, use or transfer it for unrelated purposes or advertising, or use it to determine creditworthiness or for lending. External recipients, when any, are limited to the functional, user-directed workflows described in this policy. The publisher does not operate a service that receives these extension records.</p>
+<h2>Contact</h2>
+<p>Support and privacy email: omriluz1994@gmail.com</p>
+<p>Hosted privacy policy: https://omriluz.github.io/quickimage-privacy/23-formulaflow-math-latex-inserter/</p>
+<p>Last updated: 2026-10-02</p>
+</main></body></html>

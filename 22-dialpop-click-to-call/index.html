@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>DialPop: Click-to-Call Preview Privacy Policy</title><style>body{max-width:760px;margin:48px auto;padding:0 24px;font:17px/1.65 system-ui,sans-serif;color:#202124}h1,h2{line-height:1.25}h2{margin-top:32px}a{color:#1457b8}code{font-size:.9em}</style></head><body><main><h1>DialPop: Click-to-Call Preview Privacy Policy</h1>
+<h2>Data handled</h2>
+<p>When the user clicks <strong>Scan current page</strong>, DialPop reads visible text from that one active page to locate likely phone numbers. Page text and scan results remain in the browser and are not sent to a DialPop server.</p>
+<p>DialPop stores these settings in <code>chrome.storage.local</code>: selected provider, explicit default country, custom HTTPS template, and dynamic-page preference. When the user clicks <strong>Open dialer</strong>, DialPop also stores up to 50 local dial-intent entries containing the normalized number, provider type, generated route, and timestamp. Users can delete the entire intent history from the popup. The URL of each explicitly scanned tab is kept temporarily in <code>chrome.storage.session</code> to authorize its page controls; it is removed on tab closure or when Chrome clears session storage. Content scripts cannot read local settings or intent-history storage directly.</p>
+<h2>External disclosure</h2>
+<p>Route preview is local. If the user separately clicks <strong>Open dialer</strong>, Chrome passes the generated route to the system <code>tel:</code> handler or opens the chosen HTTPS provider. That provider may receive the destination number and process data under its own terms. DialPop does not test routes, place calls itself, listen to audio, record calls, verify connection, or receive provider account data.</p>
+<h2>Permissions</h2>
+<ul>
+<li><code>activeTab</code>: temporary access to the page on which the user invokes DialPop.</li>
+<li><code>scripting</code>: injects the packaged scanner only after the user clicks <strong>Scan current page</strong>.</li>
+<li><code>storage</code>: saves local settings and the deletable dial-intent log.</li>
+</ul>
+<p>DialPop has no persistent host permissions, analytics, advertising, billing, remote code, or developer-operated backend.</p>
+<h2>Local and functional data use</h2>
+<p>DialPop handles phone numbers, scanned page/resource information, local provider/template settings and recent dial-intent timestamps. Local-only processing is still disclosed as data handling. Existing site and service privacy terms apply to the functional requests or user-directed transfers described above.</p>
+<h2>Limited Use</h2>
+<p>Use of user data complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. Data is used only to provide the extension&#x27;s disclosed single purpose and its associated local controls and status. The publisher does not sell user data, use or transfer it for unrelated purposes or advertising, or use it to determine creditworthiness or for lending. External recipients, when any, are limited to the functional, user-directed workflows described in this policy. The publisher does not operate a service that receives these extension records.</p>
+<h2>Contact</h2>
+<p>Support and privacy email: omriluz1994@gmail.com</p>
+<p>Hosted privacy policy: https://omriluz.github.io/quickimage-privacy/22-dialpop-click-to-call/</p>
+<p>Last updated: 2026-10-02</p>
+</main></body></html>

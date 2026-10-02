@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>VoiceRead: Text to Speech Privacy Policy</title><style>body{max-width:760px;margin:48px auto;padding:0 24px;font:17px/1.65 system-ui,sans-serif;color:#202124}h1,h2{line-height:1.25}h2{margin-top:32px}a{color:#1457b8}code{font-size:.9em}</style></head><body><main><h1>VoiceRead: Text to Speech Privacy Policy</h1>
+<p>Last updated: 2026-09-29</p>
+<p>VoiceRead has no analytics, advertising, account system, or developer-operated server. It does not sell user data and does not keep a reading history.</p>
+<h2>Data used for the core feature</h2>
+<p>When the user opens VoiceRead or invokes its selection context menu, the extension reads the selected text or visible main text of that active page. The text is bounded to 40,000 characters and held in extension memory for the current speech session. It is passed to Chrome&#x27;s text-to-speech API in chunks and is not written to extension storage.</p>
+<p>Chrome can expose voices supplied by the operating system or another installed speech engine. Chrome marks some voices as remote. If the user chooses a remote voice, Chrome or that voice provider may transmit the spoken text to the provider to create audio. VoiceRead labels those voices “may use network.” For voices where Chrome does not report remote status, VoiceRead labels the provider status as unknown. Provider processing is governed by the browser, operating system, speech-engine extension, or provider selected by the user.</p>
+<h2>Data stored locally</h2>
+<p>VoiceRead stores only these preferences in <code>chrome.storage.local</code>:</p>
+<ul>
+<li>speech rate;</li>
+<li>selected voice name and language;</li>
+<li>selected speech-engine extension identifier, when Chrome supplies one.</li>
+</ul>
+<p>These preferences stay in the Chrome profile unless the user or browser removes them. VoiceRead does not store page text, selections, audio, URLs, browsing history, or playback history.</p>
+<h2>Permissions</h2>
+<ul>
+<li><code>activeTab</code>: temporary access to the current page after the user invokes VoiceRead.</li>
+<li><code>scripting</code>: injects the local extractor and highlighter into that user-invoked page.</li>
+<li><code>tts</code>: asks Chrome for installed voices and controls speech playback.</li>
+<li><code>storage</code>: saves the voice and speed preferences listed above.</li>
+<li><code>contextMenus</code>: adds the user-invoked “Read selection aloud with VoiceRead” command.</li>
+</ul>
+<p>VoiceRead declares no host permissions.</p>
+<h2>Local and functional data use</h2>
+<p>VoiceRead handles page text in speech-session memory and local voice/rate preferences; chosen voice providers may process spoken text as described below. Local-only processing is still disclosed as data handling. Existing site and service privacy terms apply to the functional requests or user-directed transfers described above.</p>
+<h2>Limited Use</h2>
+<p>Use of user data complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. Data is used only to provide the extension&#x27;s disclosed single purpose and its associated local controls and status. The publisher does not sell user data, use or transfer it for unrelated purposes or advertising, or use it to determine creditworthiness or for lending. External recipients, when any, are limited to the functional, user-directed workflows described in this policy. The publisher does not operate a service that receives these extension records.</p>
+<h2>Contact</h2>
+<p>Support and privacy email: omriluz1994@gmail.com</p>
+<p>Hosted privacy policy: https://omriluz.github.io/quickimage-privacy/06-voiceread-text-to-speech/</p>
+<p>Last updated: 2026-10-02</p>
+</main></body></html>

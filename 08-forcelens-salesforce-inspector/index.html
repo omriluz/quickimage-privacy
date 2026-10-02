@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ForceLens — Salesforce Record &amp; SOQL Inspector Privacy Policy</title><style>body{max-width:760px;margin:48px auto;padding:0 24px;font:17px/1.65 system-ui,sans-serif;color:#202124}h1,h2{line-height:1.25}h2{margin-top:32px}a{color:#1457b8}code{font-size:.9em}</style></head><body><main><h1>ForceLens — Salesforce Record &amp; SOQL Inspector Privacy Policy</h1>
+<p>Last updated: 2026-09-29</p>
+<h2>Data used</h2>
+<p>ForceLens reads the URL of the active tab to confirm it is an HTTPS Salesforce or Force domain and to detect a Lightning record object and ID. It reads the <code>sid</code> session cookie associated with that active org and tab cookie store. It sends the user&#x27;s read-only SOQL and authenticated GET requests directly to that same validated Salesforce org. Returned record and query data are displayed temporarily in the popup.</p>
+<p>The active session cookie remains inside the extension background service worker. It is not returned to the popup, written to extension storage, logged, included in exports, or sent to a caller-selected host. Redirects are disabled for credential-bearing requests.</p>
+<h2>Storage, sharing, and export</h2>
+<p>ForceLens has no analytics, telemetry, advertising, remote scripts, or third-party service. It does not persist queries or Salesforce results. Data leaves the popup only when the user explicitly downloads all loaded query results as a local CSV file. Salesforce itself receives the API requests as part of the requested workflow.</p>
+<h2>Permissions</h2>
+<ul>
+<li><code>activeTab</code>: identifies the active page after the user opens ForceLens.</li>
+<li><code>cookies</code>: reads the Salesforce session cookie required for direct API authentication.</li>
+<li>Salesforce and Force host permissions: read the matching cookie and make REST requests only on supported Salesforce hosts.</li>
+</ul>
+<h2>Retention and deletion</h2>
+<p>The extension retains no Salesforce data. Closing the popup discards its in-memory results. Exported CSV files are controlled and deleted by the user through their device.</p>
+<p>The result table uses 50-row pages to keep the popup responsive. “Export loaded CSV” includes every fetched row across those pages, within the documented query limits.</p>
+<h2>Local and functional data use</h2>
+<p>ForceLens handles active org URL, session cookie and record/query data in memory, potentially including personal information; optional local CSV exports. Local-only processing is still disclosed as data handling. Existing site and service privacy terms apply to the functional requests or user-directed transfers described above.</p>
+<h2>Limited Use</h2>
+<p>Use of user data complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. Data is used only to provide the extension&#x27;s disclosed single purpose and its associated local controls and status. The publisher does not sell user data, use or transfer it for unrelated purposes or advertising, or use it to determine creditworthiness or for lending. External recipients, when any, are limited to the functional, user-directed workflows described in this policy. The publisher does not operate a service that receives these extension records.</p>
+<h2>Contact</h2>
+<p>Support and privacy email: omriluz1994@gmail.com</p>
+<p>Hosted privacy policy: https://omriluz.github.io/quickimage-privacy/08-forcelens-salesforce-inspector/</p>
+<p>Last updated: 2026-10-02</p>
+</main></body></html>
